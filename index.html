@@ -1,0 +1,2084 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="description" content="Denise Evans, MSW, RSW — trauma-informed therapy for teens and adults. In-person in Georgetown, Ontario and virtually across the province. EMDR, somatic, ego-state and DBT-informed care." />
+<meta name="theme-color" content="#1f2723" />
+<meta property="og:title" content="Denise Evans Therapy — Trauma-Informed Therapist in Georgetown, Ontario" />
+<meta property="og:description" content="Change starts with being understood. Individual therapy for teens and adults, in-person in Georgetown and virtually across Ontario." />
+<title>Denise Evans Therapy — Trauma-Informed Therapy · Georgetown, Ontario</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,30..100,0..1;1,9..144,300..900,30..100,0..1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<style>
+/* =========================================================
+   DENISE EVANS THERAPY
+   Design system — calm editorial, therapeutic warmth
+   ========================================================= */
+
+:root{
+  /* Color — quiet, grounded palette */
+  --ink:          #1f2723;        /* deep forest ink */
+  --ink-soft:     #2c3530;
+  --bone:         #f6efe4;        /* warm bone */
+  --cream:        #fbf6ec;        /* soft cream */
+  --paper:        #efe6d2;        /* rich paper */
+  --paper-deep:   #e3d7bb;
+  --sage:         #8a9a87;        /* soft sage */
+  --sage-2:       #a6b4a1;
+  --sage-deep:    #4a5b4d;        /* deep sage */
+  --clay:         #b5694a;        /* burnt clay (accent) */
+  --clay-2:       #c9825f;
+  --gold:         #b59456;        /* soft gold */
+  --gold-2:       #d1b07a;
+  --line:         rgba(31,39,35,0.14);
+  --line-cream:   rgba(246,239,228,0.16);
+  --line-soft:    rgba(31,39,35,0.08);
+
+  /* Type */
+  --serif:   'Fraunces', 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --sans:    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --mono:    ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Fluid type scale */
+  --fs-xs:   clamp(11px, 0.7vw + 9px, 13px);
+  --fs-sm:   clamp(13px, 0.5vw + 12px, 15px);
+  --fs-md:   clamp(15px, 0.35vw + 14px, 17px);
+  --fs-lg:   clamp(18px, 0.7vw + 16px, 22px);
+  --fs-xl:   clamp(22px, 1.2vw + 20px, 30px);
+  --fs-2xl:  clamp(30px, 2.4vw + 22px, 48px);
+  --fs-3xl:  clamp(40px, 4.4vw + 26px, 88px);
+  --fs-4xl:  clamp(56px, 6.4vw + 32px, 132px);
+
+  /* Spacing */
+  --pad-x:   clamp(20px, 4vw, 64px);
+  --gap-sm:  12px;
+  --gap-md:  24px;
+  --gap-lg:  48px;
+  --gap-xl:  96px;
+
+  --max:          1340px;
+  --max-narrow:   860px;
+  --max-read:     680px;
+
+  --radius:       2px;
+  --radius-soft:  14px;
+  --ease:         cubic-bezier(.2,.7,.2,1);
+  --ease-hero:    cubic-bezier(.16,1,.3,1);
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--sans);
+  font-size:var(--fs-md);
+  line-height:1.7;
+  color:var(--ink);
+  background:var(--cream);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  overflow-x:hidden;
+}
+img,svg,video{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit}
+input,textarea,select{font-family:inherit;font-size:inherit;color:inherit}
+
+::selection{background:var(--sage-deep);color:var(--bone)}
+
+/* ---------- Reusable primitives ---------- */
+.eyebrow{
+  display:inline-flex;align-items:center;gap:14px;
+  font-family:var(--sans);font-size:11px;font-weight:600;
+  letter-spacing:.26em;text-transform:uppercase;
+  color:var(--sage-deep);
+}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor;opacity:.8}
+.eyebrow.plain::before{display:none}
+.eyebrow.center{justify-content:center}
+.eyebrow.center::before{display:none}
+.eyebrow.center::after{content:"";width:28px;height:1px;background:currentColor;opacity:.8;margin-left:14px}
+.eyebrow.on-dark{color:var(--gold-2)}
+.eyebrow.clay{color:var(--clay)}
+
+.display{
+  font-family:var(--serif);
+  font-weight:300;
+  font-variation-settings:"opsz" 96, "SOFT" 60, "WONK" 0;
+  letter-spacing:-0.02em;
+  line-height:1.04;
+  color:var(--ink);
+}
+.display em{
+  font-style:italic;
+  font-variation-settings:"opsz" 96, "SOFT" 100, "WONK" 1;
+  color:var(--sage-deep);
+  font-weight:300;
+}
+.display .tracked{
+  font-size:.38em;letter-spacing:.32em;text-transform:uppercase;
+  font-weight:500;display:block;color:var(--sage-deep);
+  margin-bottom:1.2em;font-family:var(--sans);
+}
+
+.lead{
+  font-family:var(--serif);
+  font-variation-settings:"opsz" 24, "SOFT" 100;
+  font-weight:300;
+  font-size:var(--fs-xl);
+  line-height:1.45;
+  color:var(--ink-soft);
+  letter-spacing:-0.005em;
+}
+
+.body-copy{
+  font-family:var(--sans);
+  font-size:var(--fs-md);
+  line-height:1.75;
+  color:var(--ink-soft);
+  font-weight:400;
+}
+.body-copy p + p{margin-top:1em}
+
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:16px 28px;border-radius:2px;
+  font-family:var(--sans);font-size:12px;font-weight:600;
+  letter-spacing:.18em;text-transform:uppercase;
+  transition:all .4s var(--ease);
+  position:relative;overflow:hidden;
+  cursor:pointer;line-height:1;
+}
+.btn svg{width:14px;height:14px;transition:transform .4s var(--ease)}
+.btn:hover svg{transform:translateX(4px)}
+.btn-primary{background:var(--ink);color:var(--bone);border:1px solid var(--ink)}
+.btn-primary:hover{background:var(--sage-deep);border-color:var(--sage-deep)}
+.btn-ghost{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:var(--bone)}
+.btn-ghost-light{background:transparent;color:var(--bone);border:1px solid rgba(246,239,228,.55)}
+.btn-ghost-light:hover{background:var(--bone);color:var(--ink);border-color:var(--bone)}
+.btn-link{
+  padding:0;font-family:var(--sans);font-size:11px;font-weight:600;
+  letter-spacing:.24em;text-transform:uppercase;
+  color:var(--ink);border-bottom:1px solid currentColor;
+  padding-bottom:3px;gap:8px;transition:color .3s var(--ease);
+}
+.btn-link:hover{color:var(--clay)}
+.btn-link.on-dark{color:var(--gold-2)}
+.btn-link.on-dark:hover{color:var(--bone)}
+
+.section{padding:clamp(80px,8vw,140px) var(--pad-x);position:relative}
+.section--pad-sm{padding:clamp(56px,6vw,96px) var(--pad-x)}
+.section--dark{background:var(--ink);color:var(--bone)}
+.section--dark .display{color:var(--bone)}
+.section--dark .display em{color:var(--gold-2)}
+.section--dark .display .tracked{color:var(--gold)}
+.section--dark .body-copy{color:rgba(246,239,228,.82)}
+.section--cream{background:var(--cream)}
+.section--bone{background:var(--bone)}
+.section--paper{background:var(--paper)}
+.section--sage{background:var(--sage-deep);color:var(--bone)}
+.section--sage .display{color:var(--bone)}
+.section--sage .display em{color:var(--gold-2)}
+.section--sage .body-copy{color:rgba(246,239,228,.86)}
+.section--sage .eyebrow{color:var(--gold-2)}
+.wrap{max-width:var(--max);margin:0 auto;width:100%}
+.wrap-narrow{max-width:var(--max-narrow);margin:0 auto;width:100%}
+.wrap-read{max-width:var(--max-read);margin:0 auto;width:100%}
+
+.divider{height:1px;background:var(--line);margin:0 auto;max-width:var(--max)}
+.divider--dark{background:var(--line-cream)}
+
+/* =========================================================
+   PRELOADER
+   ========================================================= */
+#preloader{
+  position:fixed;inset:0;z-index:200;
+  background:var(--ink);color:var(--bone);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:24px;
+  transition:opacity .9s var(--ease-hero), visibility .9s var(--ease-hero);
+}
+#preloader.done{opacity:0;visibility:hidden;pointer-events:none}
+.pre-mark{width:72px;height:72px;position:relative}
+.pre-mark svg{width:100%;height:100%}
+.pre-mark svg circle,
+.pre-mark svg path{
+  stroke-dasharray:300;stroke-dashoffset:300;
+  animation:draw 1.8s var(--ease-hero) forwards;
+}
+.pre-mark svg path:nth-child(2){animation-delay:.25s}
+.pre-mark svg path:nth-child(3){animation-delay:.5s}
+@keyframes draw{to{stroke-dashoffset:0}}
+.pre-tag{
+  font-family:var(--sans);font-size:10px;letter-spacing:.36em;text-transform:uppercase;
+  color:var(--gold-2);opacity:0;animation:fade .8s 1s forwards;
+}
+@keyframes fade{to{opacity:1}}
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:90;
+  padding:22px var(--pad-x);
+  transition:all .5s var(--ease);
+  display:flex;align-items:center;justify-content:space-between;
+  mix-blend-mode:difference;
+  color:var(--bone);
+}
+.nav.scrolled{
+  mix-blend-mode:normal;
+  background:rgba(251,246,236,.94);
+  backdrop-filter:blur(18px) saturate(1.1);
+  -webkit-backdrop-filter:blur(18px) saturate(1.1);
+  padding:14px var(--pad-x);
+  border-bottom:1px solid var(--line);
+  color:var(--ink);
+}
+.nav-brand{display:flex;align-items:center;gap:14px;font-family:var(--serif);font-size:17px;letter-spacing:.01em;font-weight:400}
+.nav-brand .mark{
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  border:1px solid currentColor;border-radius:50%;flex-shrink:0;
+}
+.nav-brand .mark svg{width:19px;height:19px}
+.nav-brand .brand-name{line-height:1;letter-spacing:.02em;font-weight:400}
+.nav-brand .brand-sub{
+  display:block;font-family:var(--sans);font-size:9px;
+  letter-spacing:.3em;text-transform:uppercase;font-weight:500;
+  opacity:.7;margin-top:4px;
+}
+
+.nav-center{display:flex;gap:40px;align-items:center}
+.nav-center a{
+  font-family:var(--sans);font-size:12px;font-weight:500;
+  letter-spacing:.18em;text-transform:uppercase;
+  position:relative;padding:6px 0;transition:color .3s var(--ease);
+}
+.nav-center a::after{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:1px;
+  background:currentColor;transform:scaleX(0);transform-origin:left;
+  transition:transform .4s var(--ease);
+}
+.nav-center a:hover::after{transform:scaleX(1)}
+.nav-right{display:flex;gap:16px;align-items:center}
+.nav-right .btn{padding:12px 22px;font-size:11px}
+
+.nav-burger{display:none;width:40px;height:40px;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.nav-burger span{display:block;width:22px;height:1.5px;background:currentColor;transition:all .3s var(--ease)}
+.nav-burger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.nav-burger.open span:nth-child(2){opacity:0}
+.nav-burger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+
+/* Mobile nav overlay */
+.nav-overlay{
+  position:fixed;inset:0;z-index:85;
+  background:var(--ink);color:var(--bone);
+  display:flex;align-items:center;justify-content:center;
+  transform:translateY(-100%);transition:transform .6s var(--ease-hero);
+  padding:var(--pad-x);
+}
+.nav-overlay.open{transform:translateY(0)}
+.nav-overlay-inner{text-align:center;display:flex;flex-direction:column;gap:28px;align-items:center}
+.nav-overlay-inner a{
+  font-family:var(--serif);font-size:clamp(32px,6vw,52px);
+  letter-spacing:-0.02em;line-height:1.1;color:var(--bone);font-weight:300;
+}
+.nav-overlay-inner a:hover{color:var(--gold-2);font-style:italic}
+.nav-overlay-contact{
+  margin-top:40px;padding-top:28px;border-top:1px solid var(--line-cream);
+  font-family:var(--sans);font-size:13px;color:var(--gold-2);letter-spacing:.04em;
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+.hero{
+  position:relative;
+  min-height:100vh;min-height:100dvh;
+  background:var(--ink);
+  color:var(--bone);
+  overflow:hidden;
+  display:flex;flex-direction:column;justify-content:flex-end;
+  padding:140px var(--pad-x) 72px;
+}
+.hero::before{
+  content:"";position:absolute;inset:0;z-index:1;
+  background-image:url('https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=2400&q=85');
+  background-size:cover;background-position:center;
+  transform:scale(1.08);
+  animation:heroZoom 14s var(--ease-hero) forwards;
+  filter:brightness(.58) saturate(.88) contrast(1.02);
+}
+@keyframes heroZoom{to{transform:scale(1)}}
+.hero::after{
+  content:"";position:absolute;inset:0;z-index:2;
+  background:
+    linear-gradient(180deg, rgba(31,39,35,0.18) 0%, rgba(31,39,35,0) 28%, rgba(31,39,35,0) 52%, rgba(31,39,35,.82) 100%),
+    linear-gradient(92deg, rgba(31,39,35,.42) 0%, rgba(31,39,35,0) 58%);
+}
+.hero-inner{position:relative;z-index:3;max-width:var(--max);width:100%;margin:0 auto}
+.hero-eyebrow{
+  font-family:var(--sans);font-size:11px;font-weight:500;
+  letter-spacing:.32em;text-transform:uppercase;color:var(--gold-2);
+  display:flex;align-items:center;gap:14px;margin-bottom:32px;
+  opacity:0;animation:rise 1s 1.4s var(--ease-hero) forwards;
+}
+.hero-eyebrow::before{content:"";width:36px;height:1px;background:currentColor}
+
+.hero h1{
+  font-family:var(--serif);font-weight:300;
+  font-variation-settings:"opsz" 144, "SOFT" 100, "WONK" 0;
+  font-size:var(--fs-3xl);line-height:.98;letter-spacing:-0.025em;
+  color:var(--bone);
+  max-width:14ch;
+  margin-bottom:40px;
+  opacity:0;transform:translateY(28px);
+  animation:rise 1.2s 1.7s var(--ease-hero) forwards;
+}
+.hero h1 em{
+  font-variation-settings:"opsz" 144, "SOFT" 100, "WONK" 1;
+  color:var(--gold-2);font-style:italic;font-weight:300;
+}
+.hero h1 .nowrap{display:inline-block}
+
+.hero-lead{
+  font-family:var(--sans);font-size:var(--fs-lg);font-weight:300;
+  line-height:1.55;color:rgba(246,239,228,.86);
+  max-width:44ch;margin-bottom:48px;
+  opacity:0;transform:translateY(20px);
+  animation:rise 1s 2.1s var(--ease-hero) forwards;
+}
+.hero-actions{
+  display:flex;flex-wrap:wrap;gap:14px;
+  opacity:0;transform:translateY(16px);
+  animation:rise .9s 2.4s var(--ease-hero) forwards;
+}
+
+@keyframes rise{to{opacity:1;transform:translateY(0)}}
+
+.hero-meta{
+  position:absolute;z-index:3;
+  left:var(--pad-x);right:var(--pad-x);
+  bottom:28px;
+  display:flex;justify-content:space-between;align-items:flex-end;gap:28px;
+  font-family:var(--sans);font-size:10px;letter-spacing:.28em;
+  text-transform:uppercase;color:rgba(246,239,228,.62);
+  opacity:0;animation:rise .9s 2.7s var(--ease-hero) forwards;
+}
+.hero-meta-item{display:flex;flex-direction:column;gap:5px}
+.hero-meta-item span:first-child{opacity:.58;font-size:9px}
+.hero-scroll-hint{
+  position:absolute;left:50%;bottom:28px;transform:translateX(-50%);
+  z-index:3;font-family:var(--sans);font-size:9px;letter-spacing:.36em;
+  text-transform:uppercase;color:rgba(246,239,228,.5);
+  display:flex;flex-direction:column;align-items:center;gap:10px;
+  opacity:0;animation:rise .9s 3s var(--ease-hero) forwards;
+}
+.hero-scroll-hint::after{
+  content:"";width:1px;height:40px;background:currentColor;
+  animation:scrollPulse 2.4s infinite var(--ease);
+}
+@keyframes scrollPulse{
+  0%,100%{transform:scaleY(.3);transform-origin:top}
+  50%{transform:scaleY(1);transform-origin:top}
+}
+
+/* =========================================================
+   INTRO / PROMISE
+   ========================================================= */
+.intro{
+  padding:clamp(80px,9vw,140px) var(--pad-x);
+  background:var(--cream);
+  position:relative;
+}
+.intro-grid{
+  display:grid;grid-template-columns:1fr 1.3fr;gap:clamp(48px,6vw,120px);
+  max-width:var(--max);margin:0 auto;align-items:start;
+}
+.intro-label{
+  position:sticky;top:120px;
+  display:flex;flex-direction:column;gap:24px;
+}
+.intro-label .eyebrow{margin-bottom:8px}
+.intro-label h3{
+  font-family:var(--serif);font-weight:300;
+  font-variation-settings:"opsz" 48, "SOFT" 80;
+  font-size:var(--fs-xl);line-height:1.15;letter-spacing:-0.015em;
+  color:var(--ink);max-width:16ch;
+}
+.intro-label h3 em{font-style:italic;color:var(--sage-deep)}
+
+.intro-body{display:flex;flex-direction:column;gap:32px}
+.intro-body .lead{font-size:clamp(22px,2vw + 14px, 34px);line-height:1.35;font-weight:300;color:var(--ink);max-width:22ch}
+.intro-body .lead em{font-style:italic;color:var(--sage-deep)}
+.intro-sig{
+  display:flex;align-items:center;gap:18px;margin-top:12px;
+  padding-top:28px;border-top:1px solid var(--line);
+  font-family:var(--serif);font-size:16px;font-style:italic;color:var(--sage-deep);
+}
+.intro-sig-name{
+  font-family:var(--serif);font-weight:400;font-size:18px;
+  font-style:italic;color:var(--ink);
+}
+.intro-sig-title{
+  font-family:var(--sans);font-size:10px;letter-spacing:.24em;
+  text-transform:uppercase;color:var(--sage-deep);margin-top:4px;font-style:normal;
+}
+
+/* =========================================================
+   WHO I WORK WITH
+   ========================================================= */
+.audience{
+  padding:clamp(80px,8vw,140px) var(--pad-x);
+  background:var(--bone);position:relative;
+}
+.audience-head{
+  display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,4vw,80px);
+  max-width:var(--max);margin:0 auto clamp(56px,6vw,96px);
+  align-items:end;
+}
+.audience-head h2{font-family:var(--serif);font-weight:300;font-variation-settings:"opsz" 96, "SOFT" 80;font-size:var(--fs-2xl);line-height:1.04;letter-spacing:-0.02em;color:var(--ink);max-width:14ch}
+.audience-head h2 em{font-style:italic;color:var(--sage-deep)}
+.audience-head p{font-family:var(--sans);font-size:var(--fs-md);line-height:1.7;color:var(--ink-soft);max-width:42ch}
+
+.audience-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:2px;
+  max-width:var(--max);margin:0 auto;background:var(--line);
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+}
+.audience-card{
+  background:var(--bone);padding:clamp(32px,3.2vw,52px);
+  display:flex;flex-direction:column;gap:24px;min-height:360px;
+  position:relative;transition:background .5s var(--ease);
+}
+.audience-card:hover{background:var(--cream)}
+.audience-card .num{
+  font-family:var(--serif);font-style:italic;font-weight:300;
+  font-variation-settings:"opsz" 48, "SOFT" 100, "WONK" 1;
+  font-size:48px;color:var(--sage-deep);line-height:1;
+}
+.audience-card h3{
+  font-family:var(--serif);font-weight:400;
+  font-variation-settings:"opsz" 48, "SOFT" 70;
+  font-size:clamp(24px,1.4vw + 18px, 32px);line-height:1.15;
+  letter-spacing:-0.015em;color:var(--ink);
+}
+.audience-card p{
+  font-family:var(--sans);font-size:14.5px;line-height:1.7;
+  color:var(--ink-soft);
+}
+.audience-card .card-link{margin-top:auto;padding-top:12px}
+
+/* =========================================================
+   SIGNS / SYMPTOMS LIST
+   ========================================================= */
+.signs{
+  padding:clamp(80px,9vw,140px) var(--pad-x);
+  background:var(--paper);position:relative;
+}
+.signs-inner{
+  max-width:var(--max);margin:0 auto;
+  display:grid;grid-template-columns:1fr 1.4fr;gap:clamp(48px,6vw,120px);align-items:start;
+}
+.signs-left{position:sticky;top:120px;display:flex;flex-direction:column;gap:28px}
+.signs-left h2{
+  font-family:var(--serif);font-weight:300;
+  font-variation-settings:"opsz" 96, "SOFT" 80;
+  font-size:var(--fs-2xl);line-height:1.04;letter-spacing:-0.02em;color:var(--ink);
+}
+.signs-left h2 em{font-style:italic;color:var(--clay)}
+.signs-left p{font-family:var(--sans);font-size:var(--fs-md);line-height:1.75;color:var(--ink-soft);max-width:40ch}
+
+.signs-list{display:flex;flex-direction:column}
+.signs-list li{
+  list-style:none;padding:22px 0;
+  border-bottom:1px solid var(--line);
+  font-family:var(--serif);font-size:clamp(18px,1vw + 14px, 24px);
+  font-weight:300;line-height:1.35;color:var(--ink);
+  font-variation-settings:"opsz" 36, "SOFT" 80;
+  display:flex;gap:22px;align-items:baseline;
+  transition:color .4s var(--ease), padding-left .4s var(--ease);
+}
+.signs-list li:first-child{border-top:1px solid var(--line)}
+.signs-list li::before{
+  content:counter(signs,decimal-leading-zero);counter-increment:signs;
+  font-family:var(--sans);font-size:10px;font-weight:500;letter-spacing:.22em;
+  color:var(--sage-deep);min-width:32px;flex-shrink:0;
+  padding-top:8px;
+}
+.signs-list{counter-reset:signs}
+.signs-list li:hover{color:var(--sage-deep);padding-left:12px}
+
+/* =========================================================
+   MEET DENISE
+   ========================================================= */
+.meet{
+  padding:clamp(80px,9vw,140px) var(--pad-x);
+  background:var(--cream);position:relative;
+}
+.meet-grid{
+  display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(48px,6vw,96px);
+  max-width:var(--max);margin:0 auto;align-items:center;
+}
+.meet-photo{
+  position:relative;aspect-ratio:4/5;
+  background:var(--paper);overflow:hidden;
+  box-shadow:0 40px 80px -30px rgba(31,39,35,.22);
+}
+.meet-photo img{
+  width:100%;height:100%;object-fit:cover;object-position:center 20%;
+  filter:saturate(.97) contrast(1.02);
+  transition:transform 1.6s var(--ease-hero);
+}
+.meet-photo:hover img{transform:scale(1.04)}
+.meet-photo::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(180deg, rgba(31,39,35,0) 45%, rgba(31,39,35,.35) 100%);
+}
+.meet-photo-tag{
+  position:absolute;left:24px;bottom:24px;z-index:2;
+  font-family:var(--sans);font-size:10px;letter-spacing:.3em;
+  text-transform:uppercase;color:var(--bone);
+  background:rgba(31,39,35,.55);backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  padding:10px 16px;border:1px solid rgba(246,239,228,.14);
+}
+
+.meet-copy{display:flex;flex-direction:column;gap:28px}
+.meet-copy h2{
+  font-family:var(--serif);font-weight:300;
+  font-variation-settings:"opsz" 144, "SOFT" 100;
+  font-size:var(--fs-3xl);line-height:1.02;letter-spacing:-0.025em;
+  color:var(--ink);max-width:14ch;
+}
+.meet-copy h2 em{font-style:italic;color:var(--sage-deep);font-variation-settings:"opsz" 144, "SOFT" 100, "WONK" 1}
+.meet-copy .credentials{
+  font-family:var(--sans);font-size:11px;letter-spacing:.26em;
+  text-transform:uppercase;color:var(--sage-deep);font-weight:500;
+}
+.meet-copy .body-copy{max-width:48ch}
+.meet-quote{
+  padding:28px 0 28px 28px;margin-top:4px;
+  border-left:2px solid var(--sage-deep);
+  font-family:var(--serif);font-style:italic;font-weight:300;
+  font-size:var(--fs-lg);line-height:1.45;color:var(--ink);
+  font-variation-settings:"opsz" 48, "SOFT" 100, "WONK" 1;
+  max-width:42ch;
+}
+.meet-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:8px}
+
+/* =========================================================
+   APPROACH / PHILOSOPHY — dark editorial
+   ========================================================= */
+.approach{
+  padding:clamp(96px,10vw,160px) var(--pad-x);
+  background:var(--ink);color:var(--bone);
+  position:relative;overflow:hidden;
+}
+.approach::before{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(circle at 80% 20%, rgba(181,148,86,.09), transparent 55%),
+             radial-gradient(circle at 10% 90%, rgba(138,154,135,.08), transparent 55%);
+  pointer-events:none;
+}
+.approach-inner{max-width:var(--max);margin:0 auto;position:relative;z-index:2}
+.approach-head{
+  display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(32px,4vw,80px);
+  margin-bottom:clamp(56px,6vw,96px);align-items:end;
+}
+.approach-head .eyebrow{color:var(--gold-2)}
+.approach-head h2{
+  font-family:var(--serif);font-weight:300;
+  font-variation-settings:"opsz" 144, "SOFT" 100;
+  font-size:var(--fs-3xl);line-height:1;letter-spacing:-0.028em;color:var(--bone);
+  margin-top:20px;
+}
+.approach-head h2 em{
+  font-style:italic;color:var(--gold-2);
+  font-variation-settings:"opsz" 144, "SOFT" 100, "WONK" 1;
+}
+.approach-head p{
+  font-family:var(--sans);font-size:var(--fs-lg);font-weight:300;line-height:1.5;
+  color:rgba(246,239,228,.82);max-width:42ch;
+}
+
+.approach-pillars{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-cream);
+  border-top:1px solid var(--line-cream);border-bottom:1px solid var(--line-cream);
+}
+.pillar{
+  background:var(--ink);padding:clamp(32px,3vw,56px) clamp(24px,2.4vw,40px);
+  display:flex;flex-direction:column;gap:18px;min-height:300px;
+  transition:background .5s var(--ease);
+}
+.pillar:hover{background:var(--ink-soft)}
+.pillar-num{
+  font-family:var(--sans);font-size:10px;letter-spacing:.3em;
+  text-transform:uppercase;color:var(--gold);font-weight:500;
+}
+.pillar h3{
+  font-family:var(--serif);font-weight:300;
+  font-variation-settings:"opsz" 48, "SOFT" 80;
+  font-size:clamp(22px,1.2vw + 16px,28px);line-height:1.15;
+  letter-spacing:-0.015em;color:var(--bone);
+}
+.pillar h3 em{font-style:italic;color:var(--gold-2)}
+.pillar p{
+  font-family:var(--sans);font-size:14px;line-height:1.7;
+  color:rgba(246,239,228,.72);
+}
+
+/* =========================================================
+   MODALITIES
+   ========================================================= */
+.modalities{
+  padding:clamp(80px,9vw,140px) var(--pad-x);
+  background:var(--bone);position:relative;
+}
+.modalities-head{
+  max-width:var(--max);margin:0 auto clamp(56px,6vw,96px);
+  display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(32px,4vw,80px);align-items:end;
+}
+.modalities-head h2{
+  font-family:var(--serif);font-weight:300;font-variation-settings:"opsz" 96, "SOFT" 80;
+  font-size:var(--fs-2xl);line-height:1.04;letter-spacing:-0.02em;color:var(--ink);
+}
+.modalities-head h2 em{font-style:italic;color:var(--sage-deep)}
+.modalities-head p{font-family:var(--sans);font-size:var(--fs-md);line-height:1.75;color:var(--ink-soft);max-width:44ch}
+
+.modality-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+  max-width:var(--max);margin:0 auto;background:var(--line);
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+}
+.modality-card{
+  background:var(--bone);padding:clamp(28px,2.8vw,44px);
+  display:flex;flex-direction:column;gap:16px;min-height:380px;
+  position:relative;transition:background .5s var(--ease);
+  cursor:pointer;
+}
+.modality-card:hover{background:var(--cream)}
+.modality-card .m-abbr{
+  font-family:var(--serif);font-style:italic;
+  font-variation-settings:"opsz" 96, "SOFT" 100, "WONK" 1;
+  font-size:clamp(44px,3.4vw + 12px, 76px);line-height:1;color:var(--sage-deep);
+  font-weight:300;letter-spacing:-0.02em;
+}
+.modality-card .m-name{
+  font-family:var(--sans);font-size:10.5px;letter-spacing:.26em;
+  text-transform:uppercase;font-weight:600;color:var(--ink);margin-top:4px;
+}
+.modality-card .m-divider{
+  width:32px;height:1px;background:var(--sage-deep);margin:12px 0 4px;
+}
+.modality-card .m-body{
+  font-family:var(--sans);font-size:14px;line-height:1.72;color:var(--ink-soft);
+}
+.modality-card .m-tag{
+  margin-top:auto;padding-top:16px;
+  font-family:var(--sans);font-size:10px;letter-spacing:.24em;
+  text-transform:uppercase;color:var(--clay);font-weight:500;
+}
+
+/* =========================================================
+   PROCESS
+   ========================================================= */
+.process{
+  padding:clamp(96px,10vw,160px) var(--pad-x);
+  background:var(--sage-deep);color:var(--bone);
+  position:relative;overflow:hidden;
+}
+.process::before{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(circle at 15% 15%, rgba(209,176,122,.13), transparent 45%),
+    radial-gradient(circle at 85% 85%, rgba(246,239,228,.06), transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(31,39,35,.25), transparent 70%);
+  pointer-events:none;
+}
+.process::after{
+  content:"";position:absolute;inset:0;z-index:1;
+  background-image:
+    radial-gradient(1px 1px at 20% 30%, rgba(246,239,228,.08) 50%, transparent 50%),
+    radial-gradient(1px 1px at 70% 60%, rgba(246,239,228,.06) 50%, transparent 50%),
+    radial-gradient(1px 1px at 85% 20%, rgba(246,239,228,.08) 50%, transparent 50%),
+    radial-gradient(1px 1px at 30% 80%, rgba(246,239,228,.05) 50%, transparent 50%);
+  background-size:320px 320px, 440px 440px, 260px 260px, 380px 380px;
+  opacity:.5;pointer-events:none;
+}
+.process-inner{max-width:var(--max);margin:0 auto;position:relative;z-index:2}
+.process-head{
+  display:grid;grid-template-columns:1fr 1.3fr;gap:clamp(32px,4vw,80px);
+  margin-bottom:clamp(64px,6vw,104px);align-items:end;
+}
+.process-head h2{
+  font-family:var(--serif);font-weight:300;font-variation-settings:"opsz" 144, "SOFT" 100;
+  font-size:var(--fs-3xl);line-height:1;letter-spacing:-0.028em;color:var(--bone);
+}
+.process-head h2 em{font-style:italic;color:var(--gold-2);font-variation-settings:"opsz" 144, "SOFT" 100, "WONK" 1}
+.process-head p{
+  font-family:var(--sans);font-size:var(--fs-lg);font-weight:300;line-height:1.5;
+  color:rgba(246,239,228,.86);max-width:44ch;
+}
+
+.process-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(28px,3vw,64px);position:relative}
+.process-steps::before{
+  content:"";position:absolute;top:22px;left:5%;right:5%;height:1px;
+  background:rgba(246,239,228,.22);
+  display:none;
+}
+@media (min-width:900px){.process-steps::before{display:block}}
+
+.step{display:flex;flex-direction:column;gap:18px;position:relative;z-index:2}
+.step-dot{
+  width:44px;height:44px;border:1px solid rgba(246,239,228,.35);
+  border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-family:var(--serif);font-style:italic;font-size:18px;
+  color:var(--gold-2);background:var(--sage-deep);
+  font-variation-settings:"opsz" 24, "SOFT" 100, "WONK" 1;
+}
+.step h3{
+  font-family:var(--serif);font-weight:400;font-variation-settings:"opsz" 48, "SOFT" 80;
+  font-size:clamp(22px,1.2vw + 16px,28px);line-height:1.18;
+  letter-spacing:-0.012em;color:var(--bone);margin-top:8px;
+}
+.step p{font-family:var(--sans);font-size:14.5px;line-height:1.72;color:rgba(246,239,228,.78)}
+.step .step-meta{
+  font-family:var(--sans);font-size:10px;letter-spacing:.28em;
+  text-transform:uppercase;color:var(--gold-2);font-weight:500;margin-top:8px;
+}
+
+/* =========================================================
+   THE SPACE — feature
+   ========================================================= */
+.space{
+  padding:clamp(96px,10vw,160px) var(--pad-x);
+  background:var(--cream);position:relative;
+}
+.space-inner{max-width:var(--max);margin:0 auto}
+.space-intro{
+  display:grid;grid-template-columns:1fr 1.3fr;gap:clamp(32px,4vw,80px);
+  align-items:end;margin-bottom:clamp(56px,6vw,96px);
+}
+.space-intro h2{
+  font-family:var(--serif);font-weight:300;font-variation-settings:"opsz" 144, "SOFT" 100;
+  font-size:var(--fs-3xl);line-height:1;letter-spacing:-0.028em;color:var(--ink);
+}
+.space-intro h2 em{font-style:italic;color:var(--sage-deep);font-variation-settings:"opsz" 144, "SOFT" 100, "WONK" 1}
+.space-intro .lead{max-width:52ch}
+
+.space-gallery{
+  display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:repeat(2, 280px);
+  gap:12px;margin-bottom:clamp(56px,6vw,96px);
+}
+.space-gallery > figure{
+  position:relative;overflow:hidden;margin:0;
+  background:var(--paper);
+}
+.space-gallery img{
+  width:100%;height:100%;object-fit:cover;
+  filter:saturate(.97) contrast(1.01);
+  transition:transform 1.4s var(--ease-hero);
+}
+.space-gallery > figure:hover img{transform:scale(1.05)}
+.sg-1{grid-row:span 2}
+
+.space-gallery > figure::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(180deg, rgba(31,39,35,0) 55%, rgba(31,39,35,.42) 100%);
+}
+.sg-caption{
+  position:absolute;bottom:18px;left:18px;z-index:2;
+  display:flex;flex-direction:column;gap:6px;
+}
+.sg-caption .sg-label{
+  font-family:var(--sans);font-size:10px;letter-spacing:.3em;
+  text-transform:uppercase;color:var(--gold-2);font-weight:500;
+}
+.sg-caption .sg-title{
+  font-family:var(--serif);font-style:italic;font-weight:300;
+  font-variation-settings:"opsz" 36, "SOFT" 100, "WONK" 1;
+  font-size:18px;line-height:1.2;color:var(--bone);letter-spacing:-0.008em;
+  text-shadow:0 1px 20px rgba(31,39,35,.35);
+}
+
+.space-details{
+  display:grid;grid-template-columns:repeat(3, 1fr);gap:clamp(32px,3vw,56px);
+  padding:clamp(40px,4vw,64px) 0 0;border-top:1px solid var(--line);
+}
+.space-detail h4{
+  font-family:var(--sans);font-size:11px;letter-spacing:.26em;
+  text-transform:uppercase;color:var(--sage-deep);font-weight:600;margin-bottom:14px;
+}
+.space-detail p{font-family:var(--sans);font-size:14.5px;line-height:1.72;color:var(--ink-soft)}
+.space-detail p strong{color:var(--ink);font-weight:500}
+
+/* =========================================================
+   PULL QUOTE
+   ========================================================= */
+.pullquote{
+  padding:clamp(80px,8vw,140px) var(--pad-x);
+  background:var(--paper);position:relative;
+}
+.pullquote-inner{
+  max-width:var(--max-narrow);margin:0 auto;text-align:center;
+  position:relative;
+}
+.pullquote-mark{
+  font-family:var(--serif);font-style:italic;
+  font-variation-settings:"opsz" 144, "SOFT" 100, "WONK" 1;
+  font-size:120px;line-height:.5;color:var(--sage-deep);opacity:.5;
+  display:block;margin-bottom:24px;
+}
+.pullquote p{
+  font-family:var(--serif);font-weight:300;font-variation-settings:"opsz" 96, "SOFT" 80;
+  font-size:clamp(28px,2.2vw + 16px, 52px);line-height:1.18;letter-spacing:-0.02em;
+  color:var(--ink);max-width:22ch;margin:0 auto;
+}
+.pullquote p em{font-style:italic;color:var(--sage-deep);font-variation-settings:"opsz" 96, "SOFT" 100, "WONK" 1}
+.pullquote-attrib{
+  margin-top:36px;font-family:var(--sans);font-size:10px;letter-spacing:.3em;
+  text-transform:uppercase;color:var(--sage-deep);font-weight:500;
+  display:inline-flex;align-items:center;gap:14px;
+}
+.pullquote-attrib::before,.pullquote-attrib::after{
+  content:"";width:32px;height:1px;background:currentColor;opacity:.6;
+}
+
+/* =========================================================
+   LAND ACKNOWLEDGMENT / INCLUSIVITY
+   ========================================================= */
+.land{
+  padding:clamp(72px,7vw,120px) var(--pad-x);
+  background:var(--bone);position:relative;
+}
+.land-inner{
+  max-width:var(--max);margin:0 auto;
+  display:grid;grid-template-columns:1fr 1.6fr;gap:clamp(32px,5vw,80px);align-items:start;
+}
+.land-inner .eyebrow{margin-bottom:16px}
+.land-inner h3{
+  font-family:var(--serif);font-weight:300;font-variation-settings:"opsz" 48, "SOFT" 80;
+  font-size:var(--fs-xl);line-height:1.18;letter-spacing:-0.015em;color:var(--ink);
+  max-width:16ch;
+}
+.land-inner h3 em{font-style:italic;color:var(--sage-deep)}
+.land-text{
+  display:flex;flex-direction:column;gap:18px;
+  font-family:var(--sans);font-size:14.5px;line-height:1.78;color:var(--ink-soft);max-width:64ch;
+}
+.land-welcome{
+  margin-top:24px;padding:20px 24px;border-left:2px solid var(--clay);
+  font-family:var(--serif);font-style:italic;font-weight:300;
+  font-variation-settings:"opsz" 48, "SOFT" 100, "WONK" 1;
+  font-size:var(--fs-lg);line-height:1.45;color:var(--ink);max-width:40ch;
+}
+
+/* =========================================================
+   FAQ
+   ========================================================= */
+.faq{
+  padding:clamp(96px,10vw,160px) var(--pad-x);
+  background:var(--cream);position:relative;
+}
+.faq-inner{max-width:var(--max);margin:0 auto}
+.faq-head{
+  display:grid;grid-template-columns:1fr 1.3fr;gap:clamp(32px,4vw,80px);
+  margin-bottom:clamp(56px,6vw,88px);align-items:end;
+}
+.faq-head h2{
+  font-family:var(--serif);font-weight:300;font-variation-settings:"opsz" 144, "SOFT" 100;
+  font-size:var(--fs-3xl);line-height:1;letter-spacing:-0.028em;color:var(--ink);
+}
+.faq-head h2 em{font-style:italic;color:var(--sage-deep);font-variation-settings:"opsz" 144, "SOFT" 100, "WONK" 1}
+.faq-head p{font-family:var(--sans);font-size:var(--fs-lg);font-weight:300;line-height:1.5;color:var(--ink-soft);max-width:42ch}
+
+.faq-list{border-top:1px solid var(--line)}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-q{
+  width:100%;text-align:left;padding:28px 0;
+  display:flex;justify-content:space-between;align-items:center;gap:32px;
+  font-family:var(--serif);font-weight:400;font-variation-settings:"opsz" 48, "SOFT" 80;
+  font-size:clamp(19px,0.8vw + 14px, 24px);line-height:1.25;letter-spacing:-0.012em;
+  color:var(--ink);transition:color .3s var(--ease);
+}
+.faq-q:hover{color:var(--sage-deep)}
+.faq-icon{
+  flex-shrink:0;width:28px;height:28px;position:relative;
+  display:flex;align-items:center;justify-content:center;
+}
+.faq-icon::before,.faq-icon::after{
+  content:"";position:absolute;background:currentColor;
+  transition:transform .4s var(--ease);
+}
+.faq-icon::before{width:16px;height:1px}
+.faq-icon::after{width:1px;height:16px}
+.faq-item.open .faq-icon::after{transform:scaleY(0)}
+
+.faq-a{
+  overflow:hidden;max-height:0;
+  transition:max-height .5s var(--ease), padding .5s var(--ease);
+}
+.faq-a-inner{
+  padding:0 0 28px;max-width:68ch;
+  font-family:var(--sans);font-size:15px;line-height:1.78;color:var(--ink-soft);
+}
+.faq-a-inner p + p{margin-top:12px}
+.faq-item.open .faq-a{max-height:600px}
+
+/* =========================================================
+   PRICING / FEES
+   ========================================================= */
+.fees{
+  padding:clamp(80px,8vw,140px) var(--pad-x);
+  background:var(--ink);color:var(--bone);position:relative;overflow:hidden;
+}
+.fees::before{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(circle at 15% 30%, rgba(181,148,86,.08), transparent 50%),
+             radial-gradient(circle at 85% 80%, rgba(138,154,135,.08), transparent 50%);
+}
+.fees-inner{max-width:var(--max);margin:0 auto;position:relative;z-index:2}
+.fees-head{text-align:center;margin-bottom:clamp(48px,5vw,80px);display:flex;flex-direction:column;gap:20px;align-items:center}
+.fees-head h2{
+  font-family:var(--serif);font-weight:300;font-variation-settings:"opsz" 144, "SOFT" 100;
+  font-size:var(--fs-3xl);line-height:1;letter-spacing:-0.028em;color:var(--bone);max-width:16ch;
+}
+.fees-head h2 em{font-style:italic;color:var(--gold-2);font-variation-settings:"opsz" 144, "SOFT" 100, "WONK" 1}
+.fees-head p{font-family:var(--sans);font-size:var(--fs-md);color:rgba(246,239,228,.74);max-width:52ch;line-height:1.7}
+
+.fees-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+  background:var(--line-cream);border:1px solid var(--line-cream);
+}
+.fee-card{
+  background:var(--ink);padding:clamp(32px,3vw,48px);
+  display:flex;flex-direction:column;gap:14px;min-height:260px;
+}
+.fee-card .fee-label{
+  font-family:var(--sans);font-size:10.5px;letter-spacing:.28em;
+  text-transform:uppercase;color:var(--gold-2);font-weight:600;
+}
+.fee-card .fee-name{
+  font-family:var(--serif);font-weight:300;font-variation-settings:"opsz" 48, "SOFT" 80;
+  font-size:clamp(22px,1vw + 16px, 28px);line-height:1.2;color:var(--bone);letter-spacing:-0.012em;
+}
+.fee-card .fee-name em{font-style:italic;color:var(--gold-2)}
+.fee-card .fee-duration{
+  font-family:var(--sans);font-size:13px;color:rgba(246,239,228,.6);letter-spacing:.02em;
+}
+.fee-card .fee-desc{
+  font-family:var(--sans);font-size:13.5px;line-height:1.72;color:rgba(246,239,228,.7);margin-top:auto;padding-top:16px;
+}
+
+.fees-notes{
+  margin-top:clamp(40px,4vw,64px);padding-top:clamp(32px,3vw,48px);
+  border-top:1px solid var(--line-cream);
+  display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(28px,3vw,48px);
+}
+.fee-note h5{
+  font-family:var(--sans);font-size:10.5px;letter-spacing:.28em;
+  text-transform:uppercase;color:var(--gold-2);font-weight:600;margin-bottom:12px;
+}
+.fee-note p{font-family:var(--sans);font-size:13.5px;line-height:1.72;color:rgba(246,239,228,.74)}
+
+/* =========================================================
+   CONTACT / FINAL CTA
+   ========================================================= */
+.contact{
+  padding:clamp(96px,10vw,160px) var(--pad-x);
+  background:var(--bone);position:relative;
+}
+.contact-inner{max-width:var(--max);margin:0 auto}
+.contact-grid{
+  display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(48px,6vw,120px);align-items:start;
+}
+.contact-copy{display:flex;flex-direction:column;gap:28px}
+.contact-copy h2{
+  font-family:var(--serif);font-weight:300;font-variation-settings:"opsz" 144, "SOFT" 100;
+  font-size:var(--fs-4xl);line-height:.96;letter-spacing:-0.032em;color:var(--ink);max-width:10ch;
+}
+.contact-copy h2 em{font-style:italic;color:var(--sage-deep);font-variation-settings:"opsz" 144, "SOFT" 100, "WONK" 1}
+.contact-copy .lead{max-width:44ch}
+.contact-copy .lead em{font-style:italic;color:var(--sage-deep)}
+.contact-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:16px}
+
+.contact-card{
+  background:var(--cream);padding:clamp(36px,3.4vw,56px);
+  display:flex;flex-direction:column;gap:22px;
+  border:1px solid var(--line-soft);
+  box-shadow:0 40px 80px -40px rgba(31,39,35,.2);
+}
+.contact-card h3{
+  font-family:var(--serif);font-weight:400;font-variation-settings:"opsz" 48, "SOFT" 80;
+  font-size:var(--fs-xl);letter-spacing:-0.015em;color:var(--ink);margin-bottom:4px;
+}
+.contact-card h3 em{font-style:italic;color:var(--sage-deep)}
+.contact-detail{
+  display:flex;flex-direction:column;gap:6px;padding:18px 0;border-bottom:1px solid var(--line-soft);
+}
+.contact-detail:last-of-type{border-bottom:0}
+.contact-detail .c-label{
+  font-family:var(--sans);font-size:10px;letter-spacing:.28em;
+  text-transform:uppercase;color:var(--sage-deep);font-weight:600;
+}
+.contact-detail .c-value{
+  font-family:var(--serif);font-weight:400;font-variation-settings:"opsz" 24, "SOFT" 60;
+  font-size:18px;color:var(--ink);letter-spacing:-0.008em;
+}
+.contact-detail .c-value a{
+  border-bottom:1px solid var(--line);padding-bottom:2px;
+  transition:color .3s var(--ease), border-color .3s var(--ease);
+}
+.contact-detail .c-value a:hover{color:var(--sage-deep);border-color:var(--sage-deep)}
+.contact-detail .c-sub{
+  font-family:var(--sans);font-size:12.5px;line-height:1.65;color:var(--ink-soft);margin-top:6px;
+}
+.contact-hours{
+  display:grid;grid-template-columns:1fr 1fr;gap:10px 24px;
+  font-family:var(--sans);font-size:13px;color:var(--ink-soft);
+}
+.contact-hours span:nth-child(odd){font-weight:500;color:var(--ink)}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+.foot{
+  background:var(--ink);color:var(--bone);
+  padding:clamp(64px,6vw,100px) var(--pad-x) 36px;
+}
+.foot-inner{max-width:var(--max);margin:0 auto}
+.foot-top{
+  display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:clamp(32px,4vw,64px);
+  padding-bottom:56px;border-bottom:1px solid var(--line-cream);
+}
+.foot-brand{display:flex;flex-direction:column;gap:20px;max-width:36ch}
+.foot-brand .brand-mark{
+  font-family:var(--serif);font-size:24px;font-weight:400;line-height:1;
+}
+.foot-brand .brand-mark em{font-style:italic;color:var(--gold-2)}
+.foot-brand p{font-family:var(--sans);font-size:13.5px;line-height:1.7;color:rgba(246,239,228,.7)}
+
+.foot-col h4{
+  font-family:var(--sans);font-size:10.5px;letter-spacing:.28em;
+  text-transform:uppercase;color:var(--gold-2);font-weight:600;margin-bottom:18px;
+}
+.foot-col a, .foot-col span{
+  display:block;font-family:var(--sans);font-size:13.5px;line-height:1.85;
+  color:rgba(246,239,228,.78);transition:color .3s var(--ease);
+}
+.foot-col a:hover{color:var(--gold-2)}
+
+.foot-bot{
+  padding-top:28px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;
+  font-family:var(--sans);font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+  color:rgba(246,239,228,.42);
+}
+.foot-bot a:hover{color:var(--gold-2)}
+
+/* =========================================================
+   REVEAL ANIMATIONS
+   ========================================================= */
+.reveal{opacity:0;transform:translateY(32px);transition:opacity 1s var(--ease-hero), transform 1s var(--ease-hero)}
+.reveal.in{opacity:1;transform:translateY(0)}
+.reveal.delay-1{transition-delay:.12s}
+.reveal.delay-2{transition-delay:.24s}
+.reveal.delay-3{transition-delay:.36s}
+.reveal.delay-4{transition-delay:.48s}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+@media (max-width:1000px){
+  .nav-center{display:none}
+  .nav-burger{display:flex}
+  .intro-grid,
+  .meet-grid,
+  .contact-grid,
+  .audience-head,
+  .approach-head,
+  .modalities-head,
+  .process-head,
+  .space-intro,
+  .signs-inner,
+  .land-inner,
+  .foot-top,
+  .faq-head{grid-template-columns:1fr;gap:28px}
+  .intro-label,.signs-left{position:static;top:auto}
+  .audience-grid,.modality-grid,.process-steps,.fees-grid,.fees-notes,.approach-pillars,.space-details{grid-template-columns:1fr 1fr}
+  .space-gallery{grid-template-columns:1fr 1fr;grid-template-rows:240px 240px 240px;}
+  .sg-1{grid-row:span 1;grid-column:span 2}
+  .foot-top{grid-template-columns:1fr 1fr}
+  .meet-copy h2{max-width:100%}
+}
+@media (max-width:600px){
+  .audience-grid,.modality-grid,.process-steps,.fees-grid,.fees-notes,.approach-pillars,.space-details,.space-gallery{grid-template-columns:1fr;grid-template-rows:auto}
+  .sg-1{grid-column:span 1}
+  .hero-meta{flex-wrap:wrap;gap:14px}
+  .hero-scroll-hint{display:none}
+  .foot-top{grid-template-columns:1fr}
+  .foot-bot{flex-direction:column;gap:12px;font-size:10px}
+  .contact-hours{grid-template-columns:1fr 1fr}
+}
+
+</style>
+</head>
+<body>
+
+<!-- ==================== PRELOADER ==================== -->
+<div id="preloader" aria-hidden="true">
+  <div class="pre-mark">
+    <svg viewBox="0 0 72 72" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round">
+      <circle cx="36" cy="36" r="28" />
+      <path d="M20 36 Q36 14 52 36 Q36 58 20 36 Z"/>
+      <path d="M36 14 L36 58"/>
+    </svg>
+  </div>
+  <div class="pre-tag">Denise Evans Therapy</div>
+</div>
+
+<!-- ==================== NAV ==================== -->
+<nav class="nav" id="nav">
+  <a href="#top" class="nav-brand" aria-label="Denise Evans Therapy — home">
+    <span class="mark">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
+        <circle cx="12" cy="12" r="10"/>
+        <path d="M6 12 Q12 4 18 12 Q12 20 6 12 Z"/>
+      </svg>
+    </span>
+    <span>
+      <span class="brand-name">Denise Evans</span>
+      <span class="brand-sub">Therapy · Georgetown, ON</span>
+    </span>
+  </a>
+  <div class="nav-center">
+    <a href="#approach">Approach</a>
+    <a href="#services">Services</a>
+    <a href="#modalities">Modalities</a>
+    <a href="#space">The Space</a>
+    <a href="#faq">FAQ</a>
+  </div>
+  <div class="nav-right">
+    <a href="#contact" class="btn btn-primary">
+      Book a call
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+    <div class="nav-burger" id="navBurger" aria-label="Menu" role="button" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<div class="nav-overlay" id="navOverlay">
+  <div class="nav-overlay-inner">
+    <a href="#approach" class="ov-link">Approach</a>
+    <a href="#services" class="ov-link">Services</a>
+    <a href="#modalities" class="ov-link">Modalities</a>
+    <a href="#space" class="ov-link">The Space</a>
+    <a href="#faq" class="ov-link">FAQ</a>
+    <a href="#contact" class="ov-link">Contact</a>
+    <div class="nav-overlay-contact">
+      deniseevanstherapy@gmail.com · (289) 312&nbsp;0496
+    </div>
+  </div>
+</div>
+
+<!-- ==================== HERO ==================== -->
+<header class="hero" id="top">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Trauma-informed therapy · Georgetown, Ontario</div>
+    <h1>
+      Change starts<br>
+      with <em>being understood.</em>
+    </h1>
+    <p class="hero-lead">
+      Individual therapy for teens and adults who are ready for something to shift —
+      in-person in downtown Georgetown and virtually across Ontario.
+    </p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-primary">
+        Book a consultation
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#approach" class="btn btn-ghost-light">
+        How I work
+      </a>
+    </div>
+  </div>
+  <div class="hero-meta">
+    <div class="hero-meta-item">
+      <span>Practice</span>
+      <span>Est. Georgetown, 2025</span>
+    </div>
+    <div class="hero-meta-item">
+      <span>Credentials</span>
+      <span>MSW · RSW · OCSWSSW</span>
+    </div>
+    <div class="hero-meta-item">
+      <span>Reach</span>
+      <span>In-person &amp; virtual · Ontario</span>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">Scroll</div>
+</header>
+
+<!-- ==================== INTRO / PROMISE ==================== -->
+<section class="intro reveal" id="intro">
+  <div class="intro-grid">
+    <div class="intro-label">
+      <span class="eyebrow">A note from Denise</span>
+      <h3>You don't have to have it figured out to <em>take the next step.</em></h3>
+    </div>
+    <div class="intro-body">
+      <p class="lead">
+        You may be here because you want something to shift —
+        because what you've been doing isn't working any more, or
+        because you can't keep going the way you feel right now.
+      </p>
+      <div class="body-copy">
+        <p>
+          Therapy, to me, is about being human. It's a place where you don't have to have
+          things figured out or present a polished version of yourself. Together, we work
+          to make sense of experiences that can feel confusing or overwhelming on your own —
+          in a way that feels real, respectful, and deeply human.
+        </p>
+        <p>
+          By understanding yourself more clearly, you can find new ways of moving through
+          life that feel easier and more fulfilling. That's the work we do here.
+        </p>
+      </div>
+      <div class="intro-sig">
+        <div>
+          <div class="intro-sig-name">— Denise Evans</div>
+          <div class="intro-sig-title">MSW, RSW · Registered Social Worker</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ==================== WHO I WORK WITH ==================== -->
+<section class="audience" id="services">
+  <div class="audience-head">
+    <h2 class="reveal">Compassionate care <em>for the people who need it.</em></h2>
+    <p class="reveal delay-1">
+      I provide individual therapy to teens and adults who want to understand themselves
+      more deeply and move beyond old patterns that keep them stuck. For families, I also
+      offer dedicated support to parents and caregivers navigating a young person's struggle.
+    </p>
+  </div>
+
+  <div class="audience-grid">
+    <article class="audience-card reveal delay-1">
+      <span class="num">01</span>
+      <h3>Therapy<br>for Adults</h3>
+      <p>
+        For those carrying experiences that were never fully processed — old patterns that
+        still show up in relationships, persistent anxiety, low self-worth, or a sense of
+        being stuck despite trying so hard to move forward. New to therapy or deep in the
+        work, there's room here for both.
+      </p>
+      <a href="#modalities" class="btn-link card-link">
+        How I work with adults
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </article>
+
+    <article class="audience-card reveal delay-2">
+      <span class="num">02</span>
+      <h3>Therapy<br>for Teens</h3>
+      <p>
+        The majority of my career has focused on adolescents. Social stress, identity,
+        anxiety, the need to feel accepted — all of it can become overwhelming. Sessions
+        are collaborative and engaging, filled with warmth, respect, and often a bit of
+        humour. Real skills, built on real connection.
+      </p>
+      <a href="#modalities" class="btn-link card-link">
+        How I work with teens
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </article>
+
+    <article class="audience-card reveal delay-3">
+      <span class="num">03</span>
+      <h3>Support for<br>Parents &amp; Caregivers</h3>
+      <p>
+        Supporting a young person who is struggling can be extraordinarily difficult.
+        Whether your teen is in therapy with me or not ready yet, I work with caregivers
+        directly — offering insight, tools, and a place to feel less alone in the
+        experience.
+      </p>
+      <a href="#modalities" class="btn-link card-link">
+        Support for caregivers
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </article>
+  </div>
+</section>
+
+<!-- ==================== SIGNS / SYMPTOMS ==================== -->
+<section class="signs">
+  <div class="signs-inner">
+    <div class="signs-left">
+      <span class="eyebrow clay">Does this sound familiar?</span>
+      <h2 class="reveal">Patterns start to make sense <em>when you learn where they come from.</em></h2>
+      <p class="reveal delay-1">
+        Many of the people I work with arrive with a sense that something — maybe several
+        somethings — isn't quite right. If any of this resonates, you're in good company.
+      </p>
+    </div>
+    <ol class="signs-list reveal delay-2">
+      <li>Living with the impacts of complex trauma or difficult past experiences</li>
+      <li>Struggling with low self-worth or a persistent inner critic</li>
+      <li>Finding it hard to feel secure or connected in relationships</li>
+      <li>Caught in patterns of behaviour or emotional reactions you'd like to change</li>
+      <li>Overwhelmed by your thoughts, or feeling numb and disconnected from yourself</li>
+      <li>Wanting to feel more at ease, grounded, and authentic in daily life</li>
+      <li>Struggling with thoughts of hopelessness or suicide</li>
+      <li>Using self-harm as a way to cope</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ==================== MEET DENISE ==================== -->
+<section class="meet" id="about">
+  <div class="meet-grid">
+    <div class="meet-photo reveal">
+      <img src="denise-portrait.avif"
+           alt="Portrait of Denise Evans, MSW, RSW — therapist in Georgetown, Ontario"
+           loading="lazy" />
+      <div class="meet-photo-tag">Denise Evans · MSW, RSW</div>
+    </div>
+    <div class="meet-copy">
+      <span class="eyebrow reveal">Meet your therapist</span>
+      <h2 class="reveal delay-1">A space to slow down, think clearly, and <em>be met as you are.</em></h2>
+      <div class="credentials reveal delay-1">Registered Social Worker · 16 years of clinical practice</div>
+      <div class="body-copy reveal delay-2">
+        <p>
+          I'm Denise Evans, a Registered Social Worker and passionate mental health
+          therapist. I love what I do — and I'm constantly seeking new learning so I can
+          best support the people who trust me with their stories.
+        </p>
+        <p>
+          I didn't set out to become a therapist. I started in outdoor education, where I
+          saw first-hand how time outside brought out people's smiles, energy, and
+          connection. I noticed I was drawn to the people who struggled with these things
+          the most. That pulled me into a therapeutic boarding school, and eventually into
+          my Masters in Social Work at the University of Toronto. Sixteen years later,
+          I'm still learning — because the people I work with deserve nothing less.
+        </p>
+      </div>
+      <blockquote class="meet-quote reveal delay-3">
+        "My favourite part of therapy is the moment someone realizes there's nothing wrong
+        with them — and for the first time, sees that change is possible."
+      </blockquote>
+      <div class="meet-actions reveal delay-3">
+        <a href="#contact" class="btn btn-ghost">
+          Book an intro call
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#modalities" class="btn-link">My credentials &amp; training</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== APPROACH / PHILOSOPHY ==================== -->
+<section class="approach" id="approach">
+  <div class="approach-inner">
+    <div class="approach-head">
+      <div>
+        <span class="eyebrow">The approach</span>
+        <h2 class="reveal">Relaxed. Focused.<br><em>Unmistakably human.</em></h2>
+      </div>
+      <p class="reveal delay-1">
+        A session with me should feel gentle, warm, and surprisingly natural — almost
+        like sitting down with a friend and your favourite warm drink. And yet there's
+        clear direction underneath. You'll always know the work has purpose.
+      </p>
+    </div>
+
+    <div class="approach-pillars">
+      <div class="pillar reveal delay-1">
+        <span class="pillar-num">01 · Safety</span>
+        <h3>A steady presence, <em>not a performance.</em></h3>
+        <p>
+          You don't need to curate yourself here. When things feel hard or overwhelming,
+          my role is to listen, understand, and help you make sense of what's happening —
+          without ever dismissing or judging.
+        </p>
+      </div>
+      <div class="pillar reveal delay-2">
+        <span class="pillar-num">02 · Direction</span>
+        <h3>Conversational, but <em>deeply intentional.</em></h3>
+        <p>
+          Sessions are a space where you can speak freely, explore thoughts and
+          emotions, and be guided with clarity and purpose. You leave knowing what
+          we worked on and why.
+        </p>
+      </div>
+      <div class="pillar reveal delay-3">
+        <span class="pillar-num">03 · Lasting change</span>
+        <h3>Not just relief, <em>but flourishing.</em></h3>
+        <p>
+          My goal isn't only to resolve what hurts. It's to help you understand
+          yourself more clearly and build a life that feels easier, more connected,
+          and more aligned with who you actually are.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== MODALITIES ==================== -->
+<section class="modalities" id="modalities">
+  <div class="modalities-head">
+    <h2 class="reveal">Evidence-based methods, <em>tailored to you.</em></h2>
+    <p class="reveal delay-1">
+      No two people need the same thing. I draw from a carefully built toolkit —
+      trauma-focused, body-aware, and grounded in the science of human flourishing — and
+      weave approaches together around what you need right now.
+    </p>
+  </div>
+
+  <div class="modality-grid">
+    <article class="modality-card reveal delay-1">
+      <span class="m-abbr">EMDR</span>
+      <span class="m-name">Eye Movement Desensitization &amp; Reprocessing</span>
+      <span class="m-divider"></span>
+      <p class="m-body">
+        A cutting-edge trauma therapy that helps your brain finish processing memories
+        that got stuck. Highly effective for PTSD, anxiety, grief, phobias, and
+        performance anxiety. Extended 90–120 minute sessions available for deeper work.
+      </p>
+      <span class="m-tag">Trauma · Advanced training</span>
+    </article>
+
+    <article class="modality-card reveal delay-2">
+      <span class="m-abbr">Somatic</span>
+      <span class="m-name">Body-based Therapy</span>
+      <span class="m-divider"></span>
+      <p class="m-body">
+        Trauma and emotion don't only live in the mind — they're held in the body, too.
+        Through gentle awareness and body-based practices, we help the nervous system
+        settle and find its way back to safety, balance, and ease.
+      </p>
+      <span class="m-tag">Nervous system · Body-In-Mind training</span>
+    </article>
+
+    <article class="modality-card reveal delay-3">
+      <span class="m-abbr">Parts<br>Work</span>
+      <span class="m-name">Ego State Therapy</span>
+      <span class="m-divider"></span>
+      <p class="m-body">
+        We all have different "parts" of ourselves — shaped by our experiences and the
+        ways we've learned to cope. With curiosity and compassion, we get to know them.
+        Self-understanding, self-acceptance, and real flexibility follow.
+      </p>
+      <span class="m-tag">Self-understanding · Compassion</span>
+    </article>
+
+    <article class="modality-card reveal delay-1">
+      <span class="m-abbr">DBT</span>
+      <span class="m-name">Dialectical Behaviour Therapy</span>
+      <span class="m-divider"></span>
+      <p class="m-body">
+        Evidence-based skills for people who experience intense emotions, reactive
+        moments, or relationship overwhelm. We build real tools — emotion regulation,
+        distress tolerance, interpersonal effectiveness, and mindfulness — that you can
+        use in the hard moments of a real life.
+      </p>
+      <span class="m-tag">Skills · Regulation</span>
+    </article>
+
+    <article class="modality-card reveal delay-2">
+      <span class="m-abbr">EFFT</span>
+      <span class="m-name">Emotion-Focused Family Therapy</span>
+      <span class="m-divider"></span>
+      <p class="m-body">
+        Built on the idea that caregivers play a powerful role in their child's
+        emotional healing. Practical, research-supported skills for responding to your
+        child's emotional needs — and for loosening the blocks that can get in the way
+        of feeling fully effective as a parent.
+      </p>
+      <span class="m-tag">Caregivers · Family system</span>
+    </article>
+
+    <article class="modality-card reveal delay-3">
+      <span class="m-abbr">APP</span>
+      <span class="m-name">Applied Positive Psychology</span>
+      <span class="m-divider"></span>
+      <p class="m-body">
+        Grounded in the rigorous science of human flourishing — not toxic positivity.
+        Through the Certificate in Applied Positive Psychology, I help you build on
+        strengths, find meaning, and cultivate vitality. Healing what's wounded and
+        creating room for what can flourish.
+      </p>
+      <span class="m-tag">Flourishing · Strengths-based</span>
+    </article>
+  </div>
+</section>
+
+<!-- ==================== PROCESS ==================== -->
+<section class="process" id="process">
+  <div class="process-inner">
+    <div class="process-head">
+      <h2 class="reveal">What working<br>together <em>looks like.</em></h2>
+      <p class="reveal delay-1">
+        There's no mystery to it. Our first session is about understanding your story.
+        Ongoing sessions are paced to match your comfort and readiness. You'll always
+        know where we're going, and why.
+      </p>
+    </div>
+
+    <div class="process-steps">
+      <div class="step reveal delay-1">
+        <span class="step-dot">1</span>
+        <span class="step-meta">Step one · A conversation</span>
+        <h3>Reach out, no commitment</h3>
+        <p>
+          Send a short email. I'll reply with a time for a brief, no-pressure call so we
+          can talk about what you're looking for and whether we're a good fit.
+        </p>
+      </div>
+      <div class="step reveal delay-2">
+        <span class="step-dot">2</span>
+        <span class="step-meta">Step two · First session</span>
+        <h3>Your story, your goals</h3>
+        <p>
+          Our first session is focused on understanding your story and what you hope to
+          gain from therapy. Together, we identify goals and start to see the patterns
+          and themes that show up in your life.
+        </p>
+      </div>
+      <div class="step reveal delay-3">
+        <span class="step-dot">3</span>
+        <span class="step-meta">Step three · Ongoing work</span>
+        <h3>55-minute sessions, paced for you</h3>
+        <p>
+          Many people begin weekly and adjust as we go. Extended 90–120 minute sessions
+          are available when the work calls for more time and space — especially for
+          deeper EMDR or complex material.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== THE SPACE ==================== -->
+<section class="space" id="space">
+  <div class="space-inner">
+    <div class="space-intro">
+      <h2 class="reveal">A room built for <em>real conversation.</em></h2>
+      <p class="lead reveal delay-1">
+        I dreamed about creating my own therapy space for a long time — warm, comfortable,
+        a place where clients could feel spoiled and taken care of. In 2025, I made that
+        dream real. The space was designed with Haven Wellness by Design and brought to
+        life by local interior designer Kelli Jakab.
+      </p>
+    </div>
+
+    <div class="space-gallery reveal">
+      <figure class="sg-1">
+        <img src="251002-Denise-Evans-Therapy-Halton-Hills-Allison-Clark-Photography-022-WEB.avif"
+             alt="The main therapy room — soft armchair, sofa, coffee table and neutral art"
+             loading="lazy" />
+        <figcaption class="sg-caption">
+          <span class="sg-label">01 · The session room</span>
+          <span class="sg-title">Where the work happens.</span>
+        </figcaption>
+      </figure>
+      <figure class="sg-2">
+        <img src="251002-Denise-Evans-Therapy-Halton-Hills-Allison-Clark-Photography-009-WEB.avif"
+             alt="Waiting area — archway, bench seat with cushion, coat rack and potted plants"
+             loading="lazy" />
+        <figcaption class="sg-caption">
+          <span class="sg-label">02 · Waiting area</span>
+          <span class="sg-title">A soft landing.</span>
+        </figcaption>
+      </figure>
+      <figure class="sg-3">
+        <img src="251002-Denise-Evans-Therapy-Halton-Hills-Allison-Clark-Photography-033-WEB.avif"
+             alt="Kitchenette detail — glass jars with coffee pods, espresso machine, small spoons"
+             loading="lazy" />
+        <figcaption class="sg-caption">
+          <span class="sg-label">03 · Kitchenette</span>
+          <span class="sg-title">Coffee &amp; tea, always on.</span>
+        </figcaption>
+      </figure>
+      <figure class="sg-4">
+        <img src="251002-Denise-Evans-Therapy-Halton-Hills-Allison-Clark-Photography-036-WEB.avif"
+             alt="Denise tending a plant at a sun-lit window inside the office"
+             loading="lazy" />
+        <figcaption class="sg-caption">
+          <span class="sg-label">04 · Natural light</span>
+          <span class="sg-title">Tended, daily.</span>
+        </figcaption>
+      </figure>
+      <figure class="sg-5">
+        <img src="251002-Denise-Evans-Therapy-Halton-Hills-Allison-Clark-Photography-050-WEB.avif"
+             alt="Denise seated in the session chair with a laptop, representing virtual therapy"
+             loading="lazy" />
+        <figcaption class="sg-caption">
+          <span class="sg-label">05 · Inhabited</span>
+          <span class="sg-title">Room enough to think.</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="space-details">
+      <div class="space-detail reveal delay-1">
+        <h4>Location</h4>
+        <p>
+          <strong>27 Main Street South</strong><br>
+          Downtown Georgetown, Ontario<br>
+          In Halton Hills · less than a 10-minute walk from GDHS. The entrance is tucked
+          away from street-facing traffic — quiet and private.
+        </p>
+      </div>
+      <div class="space-detail reveal delay-2">
+        <h4>Accessibility</h4>
+        <p>
+          Ground-level entry, easily accessible to all, with parking directly in front of
+          the building. By appointment only — sorry, no walk-ins.
+        </p>
+      </div>
+      <div class="space-detail reveal delay-3">
+        <h4>Amenities</h4>
+        <p>
+          A small kitchenette stocked with a wide selection of coffees, teas and hot
+          chocolate — because a good conversation often starts with something warm to
+          hold. Bathroom just beside it.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PULL QUOTE ==================== -->
+<section class="pullquote">
+  <div class="pullquote-inner">
+    <span class="pullquote-mark">"</span>
+    <p class="reveal">
+      Therapy is about <em>being human.</em> A place where you don't have to have things
+      figured out, or present a polished version of yourself.
+    </p>
+    <div class="pullquote-attrib reveal delay-1">Denise Evans, MSW, RSW</div>
+  </div>
+</section>
+
+<!-- ==================== LAND & INCLUSIVITY ==================== -->
+<section class="land">
+  <div class="land-inner">
+    <div>
+      <span class="eyebrow clay">Honouring land, identity &amp; connection</span>
+      <h3 class="reveal">All of you is <em>welcome here.</em></h3>
+    </div>
+    <div class="land-text reveal delay-1">
+      <p>
+        I recognize that my work takes place on the traditional land of the Anishinaabe,
+        Haudenosaunee, Wendat, and Mississaugas of the Credit First Nation, in the area
+        now known as Georgetown. I also grew up along the shores of Lake Huron — the
+        traditional land of the Attawandaron and Ojibway peoples. The land has long
+        offered connection, grounding, and belonging, and I hold gratitude for that every
+        day.
+      </p>
+      <p>
+        In my practice, I aim to bring that same sense of safety and respect into the
+        therapy space. I'm mindful of the privileges I hold and the ways they shape my
+        perspective and relationships.
+      </p>
+      <div class="land-welcome">
+        All neurotypes, sexual orientations, gender identities, and lifestyles are welcome here.
+        My hope is that everyone who enters this space feels seen, accepted, and supported
+        as they are.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FAQ ==================== -->
+<section class="faq" id="faq">
+  <div class="faq-inner">
+    <div class="faq-head">
+      <h2 class="reveal">Good questions <em>deserve clear answers.</em></h2>
+      <p class="reveal delay-1">
+        A few of the things people most often ask before reaching out. If you have a
+        question that isn't here, please send it my way.
+      </p>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item reveal delay-1">
+        <button class="faq-q" aria-expanded="false">
+          What can I expect in my first session?
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">
+          <p>
+            Our first session is focused on understanding your story and what you hope to
+            gain from therapy. Together, we'll identify goals and start to see the
+            patterns and themes that show up in your life. You don't need to have it all
+            worked out — showing up is enough.
+          </p>
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          How do I book a session?
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">
+          <p>
+            Email me at <a href="mailto:deniseevanstherapy@gmail.com">deniseevanstherapy@gmail.com</a>
+            to book your first appointment. Once we've connected, I'll share my secure
+            booking link so you can book at your convenience.
+          </p>
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Do you offer virtual (online) therapy?
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">
+          <p>
+            Yes. I recommend in-person when possible, but virtual therapy makes support
+            more accessible — and some people genuinely find it more comfortable from
+            their own space. Available across Ontario.
+          </p>
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Are sessions covered by insurance?
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">
+          <p>
+            My services are not covered by OHIP. However, as a Registered Social Worker,
+            most extended insurance plans will reimburse all or part of the fees. Any
+            portion not covered can often be claimed on your tax return as a medical
+            expense.
+          </p>
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          How often will we meet?
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">
+          <p>
+            Many clients begin with weekly sessions, but frequency is adjusted to your
+            needs and availability. Some people work intensively for a few months and
+            then space out; others settle into a regular rhythm that supports them over
+            time. We'll figure out what fits.
+          </p>
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          What's your cancellation policy?
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">
+          <p>
+            I hold a 48-hour cancellation policy. This allows enough time for cancelled
+            slots to be offered to other clients. Unexcused no-shows or late
+            cancellations are billed at 100% of the session fee.
+          </p>
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Will I get updates about my teen's therapy?
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">
+          <p>
+            Confidentiality is essential for teens — it's what lets them feel safe enough
+            to do real work. The specifics of what your teen shares remain confidential,
+            much like in adult therapy. With your teen's consent, I'll share general
+            themes, recommendations, and ways you can support them at home. I also
+            welcome your observations about what you're noticing.
+          </p>
+          <p>
+            If you're looking for deeper caregiver support than updates allow, I refer to
+            my colleague Clair Bowman, who offers dedicated work directly with parents
+            using Emotion-Focused Family Therapy.
+          </p>
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          How often do your fees change?
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">
+          <p>
+            I review my session fees each January to keep them consistent with industry
+            standards and the ongoing costs of maintaining a high-quality, sustainable
+            practice. Any adjustments are communicated in advance, thoughtfully, and with
+            accessibility in mind.
+          </p>
+          <p>
+            If a fee change creates financial strain, please reach out. I hold a small
+            number of reduced-fee spots and do my best to accommodate when possible.
+          </p>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FEES ==================== -->
+<section class="fees" id="fees">
+  <div class="fees-inner">
+    <div class="fees-head">
+      <span class="eyebrow on-dark">Fees &amp; scheduling</span>
+      <h2 class="reveal">Clear, considered, <em>and built around the work.</em></h2>
+      <p class="reveal delay-1">
+        Session formats are designed around what the work actually needs — not a
+        one-size-fits-all clock. Fees are reviewed annually and reflect the ongoing
+        cost of running a thoughtful, sustainable practice.
+      </p>
+    </div>
+
+    <div class="fees-grid">
+      <div class="fee-card reveal delay-1">
+        <span class="fee-label">Standard session</span>
+        <div class="fee-name">55-minute <em>individual</em></div>
+        <div class="fee-duration">Teens &amp; adults · in-person or virtual</div>
+        <p class="fee-desc">
+          The core of the work. Paced to your comfort and readiness, with clear direction
+          underneath the conversation.
+        </p>
+      </div>
+      <div class="fee-card reveal delay-2">
+        <span class="fee-label">Extended session</span>
+        <div class="fee-name">90–120 minute <em>deep-work</em></div>
+        <div class="fee-duration">Ideal for EMDR &amp; complex material</div>
+        <p class="fee-desc">
+          When the work calls for more room. Extended formats let us settle in,
+          process deeply, and land well before the session ends.
+        </p>
+      </div>
+      <div class="fee-card reveal delay-3">
+        <span class="fee-label">Caregiver support</span>
+        <div class="fee-name">Parent &amp; <em>family sessions</em></div>
+        <div class="fee-duration">For caregivers of teens &amp; youth</div>
+        <p class="fee-desc">
+          Direct support for parents and caregivers — with or without your teen in
+          therapy — rooted in Emotion-Focused Family Therapy.
+        </p>
+      </div>
+    </div>
+
+    <div class="fees-notes">
+      <div class="fee-note reveal delay-1">
+        <h5>Insurance &amp; Receipts</h5>
+        <p>
+          Not OHIP-covered. As an RSW, my fees are reimbursable under most extended
+          benefit plans — and the remainder can typically be claimed as a medical
+          expense on your taxes.
+        </p>
+      </div>
+      <div class="fee-note reveal delay-2">
+        <h5>Reduced-Fee Spots</h5>
+        <p>
+          A small number of reduced-fee spots are held for clients facing financial
+          strain. If that's you, please reach out — the door is open, quietly.
+        </p>
+      </div>
+      <div class="fee-note reveal delay-3">
+        <h5>Cancellation</h5>
+        <p>
+          A 48-hour cancellation policy lets me offer openings to others waiting.
+          Unexcused no-shows are billed at 100% of the session fee.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CONTACT ==================== -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <div class="contact-grid">
+      <div class="contact-copy">
+        <span class="eyebrow reveal">Let's connect</span>
+        <h2 class="reveal delay-1">Reach out<br>when you're <em>ready.</em></h2>
+        <p class="lead reveal delay-2">
+          Reaching out for therapy can feel vulnerable. Whether you're ready to begin or
+          just gathering information, you're welcome to connect and see if this feels
+          like the right fit. Sometimes the first step is <em>the</em> step.
+        </p>
+        <div class="body-copy reveal delay-3">
+          <p>
+            Email is the best way to reach me — I'm often in session and unreachable by
+            phone. All messages are confidential, and I typically reply within a few
+            business days.
+          </p>
+        </div>
+        <div class="contact-actions reveal delay-3">
+          <a href="mailto:deniseevanstherapy@gmail.com" class="btn btn-primary">
+            Send an email
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="tel:+12893120496" class="btn btn-ghost">Call (289) 312 0496</a>
+        </div>
+      </div>
+
+      <aside class="contact-card reveal delay-2">
+        <h3>Practice <em>details</em></h3>
+
+        <div class="contact-detail">
+          <span class="c-label">Email · best way to reach me</span>
+          <span class="c-value"><a href="mailto:deniseevanstherapy@gmail.com">deniseevanstherapy@gmail.com</a></span>
+          <span class="c-sub">Confidential · answered within a few business days</span>
+        </div>
+
+        <div class="contact-detail">
+          <span class="c-label">Phone</span>
+          <span class="c-value"><a href="tel:+12893120496">(289) 312 0496</a></span>
+          <span class="c-sub">I'm often in session — email is quicker</span>
+        </div>
+
+        <div class="contact-detail">
+          <span class="c-label">Office</span>
+          <span class="c-value">27 Main Street South</span>
+          <span class="c-sub">Downtown Georgetown, Ontario · L7G 3G2<br>By appointment only · no walk-ins</span>
+        </div>
+
+        <div class="contact-detail">
+          <span class="c-label">Office hours</span>
+          <div class="contact-hours">
+            <span>Mon · Wed · Fri</span><span>9:00 – 4:00</span>
+            <span>Tue · Thu</span><span>9:00 – 5:00</span>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <span class="c-label">Current clients</span>
+          <span class="c-sub">Use your secure Jane link for scheduling — it was sent with your intake.</span>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="foot">
+  <div class="foot-inner">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="brand-mark">Denise Evans <em>Therapy</em></div>
+        <p>
+          Trauma-informed individual therapy for teens and adults. In-person in
+          downtown Georgetown, Ontario and virtually across the province.
+        </p>
+        <p style="font-family:var(--sans);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:rgba(246,239,228,.56)">
+          MSW · RSW · Registered member of OCSWSSW
+        </p>
+      </div>
+      <div class="foot-col">
+        <h4>Explore</h4>
+        <a href="#approach">Approach</a>
+        <a href="#services">Services</a>
+        <a href="#modalities">Modalities</a>
+        <a href="#process">Process</a>
+        <a href="#space">The Space</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <a href="mailto:deniseevanstherapy@gmail.com">deniseevanstherapy@<br>gmail.com</a>
+        <a href="tel:+12893120496">(289) 312 0496</a>
+        <span>27 Main Street South<br>Georgetown, ON · L7G 3G2</span>
+      </div>
+      <div class="foot-col">
+        <h4>Hours</h4>
+        <span>Monday 9–4</span>
+        <span>Tuesday 9–5</span>
+        <span>Wednesday 9–4</span>
+        <span>Thursday 9–5</span>
+        <span>Friday 9–4</span>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <div>© <span id="year">2026</span> Denise Evans Therapy · Georgetown, Ontario</div>
+      <div>Site by design &amp; care</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* ---------- Preloader ---------- */
+  window.addEventListener('load', () => {
+    setTimeout(() => document.getElementById('preloader').classList.add('done'), 1400);
+  });
+
+  /* ---------- Nav scroll state ---------- */
+  const nav = document.getElementById('nav');
+  const onScroll = () => {
+    if (window.scrollY > 48) nav.classList.add('scrolled');
+    else nav.classList.remove('scrolled');
+  };
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  /* ---------- Mobile nav ---------- */
+  const burger = document.getElementById('navBurger');
+  const overlay = document.getElementById('navOverlay');
+  const toggleMenu = () => {
+    burger.classList.toggle('open');
+    overlay.classList.toggle('open');
+    document.body.style.overflow = overlay.classList.contains('open') ? 'hidden' : '';
+  };
+  burger.addEventListener('click', toggleMenu);
+  burger.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleMenu(); }
+  });
+  document.querySelectorAll('.ov-link').forEach(a => a.addEventListener('click', toggleMenu));
+
+  /* ---------- FAQ accordion ---------- */
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.parentElement;
+      const open = item.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+  });
+
+  /* ---------- Reveal on scroll ---------- */
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, {threshold: 0.12, rootMargin: '0px 0px -60px 0px'});
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  /* ---------- Year ---------- */
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
